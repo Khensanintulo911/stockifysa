@@ -113,7 +113,7 @@ export default function RecordSaleModal({ open, onClose }: RecordSaleModalProps)
           {selectedProduct && (
             <div className="p-3 bg-gray-50 rounded-lg">
               <p className="text-sm text-gray-600">Available Stock: {selectedProduct.stock}</p>
-              <p className="text-sm text-gray-600">Unit Price: ${selectedProduct.price}</p>
+              <p className="text-sm text-gray-600">Unit Price: R{selectedProduct.price}</p>
             </div>
           )}
           
@@ -134,7 +134,7 @@ export default function RecordSaleModal({ open, onClose }: RecordSaleModalProps)
             <Label htmlFor="totalPrice">Total Price</Label>
             <Input
               id="totalPrice"
-              value={`$${formData.totalPrice}`}
+              value={`R${formData.totalPrice}`}
               readOnly
               className="bg-gray-50"
             />

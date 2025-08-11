@@ -70,7 +70,7 @@ export default function InventoryReport({ products, lowStockProducts }: Inventor
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Total Inventory Value</p>
-                <p className="text-2xl font-bold text-gray-900">${inventoryMetrics.totalStockValue.toFixed(2)}</p>
+                <p className="text-2xl font-bold text-gray-900">R{inventoryMetrics.totalStockValue.toFixed(2)}</p>
               </div>
               <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
                 <BarChart className="w-5 h-5 text-secondary" />
@@ -175,7 +175,7 @@ export default function InventoryReport({ products, lowStockProducts }: Inventor
                     <p className="text-sm text-gray-500">{data.count} products • {data.totalStock} items</p>
                   </div>
                   <div className="text-right">
-                    <p className="font-bold text-gray-900">${data.totalValue.toFixed(2)}</p>
+                    <p className="font-bold text-gray-900">R{data.totalValue.toFixed(2)}</p>
                   </div>
                 </div>
               ))}
@@ -202,11 +202,11 @@ export default function InventoryReport({ products, lowStockProducts }: Inventor
                       </div>
                       <div>
                         <p className="font-medium text-gray-900">{product.name}</p>
-                        <p className="text-sm text-gray-500">{product.stock} units @ ${product.price}</p>
+                        <p className="text-sm text-gray-500">{product.stock} units @ R{product.price}</p>
                       </div>
                     </div>
                     <div className="text-right">
-                      <p className="font-bold text-gray-900">${totalValue.toFixed(2)}</p>
+                      <p className="font-bold text-gray-900">R{totalValue.toFixed(2)}</p>
                       <Badge variant={status.variant} className="text-xs">{status.label}</Badge>
                     </div>
                   </div>

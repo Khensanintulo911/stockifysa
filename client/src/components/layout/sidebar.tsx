@@ -26,7 +26,7 @@ export default function Sidebar() {
           <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
             <Package className="w-5 h-5 text-white" />
           </div>
-          <span className="text-xl font-bold text-dark-gray">InventoryPro</span>
+          <span className="text-xl font-bold text-dark-gray">StockTracker SA</span>
         </div>
       </div>
       

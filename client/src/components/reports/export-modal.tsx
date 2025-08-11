@@ -231,7 +231,7 @@ export default function ExportModal({ open, onClose, sales, products }: ExportMo
               <Checkbox 
                 id="details" 
                 checked={includeDetails}
-                onCheckedChange={setIncludeDetails}
+                onCheckedChange={(checked) => setIncludeDetails(checked === true)}
               />
               <Label htmlFor="details">Detailed Data</Label>
             </div>
@@ -240,7 +240,7 @@ export default function ExportModal({ open, onClose, sales, products }: ExportMo
                 <Checkbox 
                   id="summary" 
                   checked={includeSummary}
-                  onCheckedChange={setIncludeSummary}
+                  onCheckedChange={(checked) => setIncludeSummary(checked === true)}
                 />
                 <Label htmlFor="summary">Summary Statistics</Label>
               </div>

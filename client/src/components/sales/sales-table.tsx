@@ -52,7 +52,7 @@ export default function SalesTable({ sales }: SalesTableProps) {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Total Sales</p>
-                <p className="text-2xl font-bold text-gray-900">${totalSales.toFixed(2)}</p>
+                <p className="text-2xl font-bold text-gray-900">R{totalSales.toFixed(2)}</p>
               </div>
               <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
                 <DollarSign className="w-5 h-5 text-secondary" />
@@ -147,8 +147,8 @@ export default function SalesTable({ sales }: SalesTableProps) {
                     </td>
                     <td className="py-4 text-sm text-gray-600">{sale.product.sku}</td>
                     <td className="py-4 text-sm text-gray-600">{sale.quantity}</td>
-                    <td className="py-4 text-sm text-gray-600">${sale.unitPrice}</td>
-                    <td className="py-4 text-sm font-medium text-gray-900">${sale.totalPrice}</td>
+                    <td className="py-4 text-sm text-gray-600">R{sale.unitPrice}</td>
+                    <td className="py-4 text-sm font-medium text-gray-900">R{sale.totalPrice}</td>
                   </tr>
                 ))}
               </tbody>

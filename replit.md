@@ -1,14 +1,17 @@
-# Inventory Management System
+# StockTracker SA - Inventory Management System
 
 ## Overview
 
-This is a modern web-based inventory management system designed to help small and emerging businesses track products, manage stock levels, process sales, and generate reports. The application provides a comprehensive dashboard with real-time metrics, low stock alerts, and intuitive interfaces for product and sales management.
+This is a modern web-based inventory management system specifically designed for South African businesses to track products, manage stock levels, process sales, and generate reports. The application features South African Rand (ZAR) currency throughout and includes sample data with authentic South African products like biltong, rooibos tea, Springbok jerseys, and other local items.
 
-The system is built as a full-stack TypeScript application with a React frontend and Express backend, featuring a clean, responsive UI built with shadcn/ui components and Tailwind CSS.
+The system provides a comprehensive dashboard with real-time metrics, low stock alerts, and intuitive interfaces for product and sales management. It's built as a full-stack TypeScript application with a React frontend and Express backend, featuring a clean, responsive UI built with shadcn/ui components and Tailwind CSS.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Currency localization: South African Rand (ZAR) displayed as "R" prefix
+Product content: South African-themed products and categories
+Application branding: "StockTracker SA" for South African market focus
 
 ## System Architecture
 
@@ -33,12 +36,14 @@ Preferred communication style: Simple, everyday language.
 - **Features**: UUID primary keys, timestamp tracking, and referential integrity
 
 ### Key Features
-- **Dashboard**: Real-time metrics, low stock alerts, quick actions, and sales overview
-- **Product Management**: CRUD operations with SKU validation and category organization
+- **Dashboard**: Real-time metrics, low stock alerts, quick actions, and sales overview with ZAR currency
+- **Product Management**: CRUD operations with SKU validation and South African product categories
 - **Inventory Tracking**: Stock level monitoring with automated low stock detection
-- **Sales Processing**: Transaction recording with automatic inventory updates
-- **Reporting**: Sales and inventory reports with export capabilities
+- **Sales Processing**: Transaction recording with automatic inventory updates in Rand
+- **Reporting**: Sales and inventory reports with export capabilities, all values in ZAR
 - **Responsive Design**: Mobile-first approach with adaptive layouts
+- **Localization**: Complete South African localization with Rand currency and local product examples
+- **Sample Data**: Authentic South African products including biltong, rooibos tea, Springbok merchandise, Amarula, traditional crafts
 
 ### API Structure
 - RESTful endpoints following standard conventions

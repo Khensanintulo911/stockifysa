@@ -123,7 +123,7 @@ export default function SalesReport({ sales }: SalesReportProps) {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Total Revenue</p>
-                <p className="text-2xl font-bold text-gray-900">${salesMetrics.totalRevenue.toFixed(2)}</p>
+                <p className="text-2xl font-bold text-gray-900">R{salesMetrics.totalRevenue.toFixed(2)}</p>
                 <p className="text-xs text-gray-500">{getPeriodLabel()}</p>
               </div>
               <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
@@ -168,7 +168,7 @@ export default function SalesReport({ sales }: SalesReportProps) {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Avg. Order Value</p>
-                <p className="text-2xl font-bold text-gray-900">${salesMetrics.averageOrderValue.toFixed(2)}</p>
+                <p className="text-2xl font-bold text-gray-900">R{salesMetrics.averageOrderValue.toFixed(2)}</p>
                 <p className="text-xs text-gray-500">{getPeriodLabel()}</p>
               </div>
               <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
@@ -203,7 +203,7 @@ export default function SalesReport({ sales }: SalesReportProps) {
                       </div>
                     </div>
                     <div className="text-right">
-                      <p className="font-bold text-gray-900">${item.totalRevenue.toFixed(2)}</p>
+                      <p className="font-bold text-gray-900">R{item.totalRevenue.toFixed(2)}</p>
                     </div>
                   </div>
                 ))

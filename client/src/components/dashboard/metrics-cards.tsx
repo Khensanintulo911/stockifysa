@@ -42,7 +42,7 @@ export default function MetricsCards({ metrics }: MetricsCardsProps) {
     },
     {
       title: "Total Sales",
-      value: `$${metrics.totalSales.toLocaleString()}`,
+      value: `R${metrics.totalSales.toLocaleString()}`,
       change: "+8% from last month",
       changeType: "positive" as const,
       icon: DollarSign,
@@ -51,7 +51,7 @@ export default function MetricsCards({ metrics }: MetricsCardsProps) {
     },
     {
       title: "Inventory Value",
-      value: `$${metrics.inventoryValue.toLocaleString()}`,
+      value: `R${metrics.inventoryValue.toLocaleString()}`,
       change: "+3% from last month",
       changeType: "positive" as const,
       icon: BarChart3,

@@ -43,7 +43,7 @@ export default function Reports() {
   const reportSummary = [
     {
       title: "Total Revenue",
-      value: `$${metrics?.totalSales?.toLocaleString() || '0'}`,
+      value: `R${metrics?.totalSales?.toLocaleString() || '0'}`,
       icon: BarChart3,
       iconBg: "bg-green-100",
       iconColor: "text-secondary",

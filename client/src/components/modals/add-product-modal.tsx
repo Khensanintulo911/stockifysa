@@ -106,16 +106,20 @@ export default function AddProductModal({ open, onClose }: AddProductModalProps)
           
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <Label htmlFor="price">Price</Label>
-              <Input
-                id="price"
-                type="number"
-                step="0.01"
-                value={formData.price}
-                onChange={(e) => setFormData({ ...formData, price: e.target.value })}
-                placeholder="0.00"
-                required
-              />
+              <Label htmlFor="price">Price (ZAR)</Label>
+              <div className="relative">
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">R</span>
+                <Input
+                  id="price"
+                  type="number"
+                  step="0.01"
+                  value={formData.price}
+                  onChange={(e) => setFormData({ ...formData, price: e.target.value })}
+                  placeholder="0.00"
+                  className="pl-8"
+                  required
+                />
+              </div>
             </div>
             <div>
               <Label htmlFor="stock">Initial Stock</Label>
@@ -137,12 +141,12 @@ export default function AddProductModal({ open, onClose }: AddProductModalProps)
                 <SelectValue placeholder="Select Category" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="electronics">Electronics</SelectItem>
-                <SelectItem value="clothing">Clothing</SelectItem>
-                <SelectItem value="books">Books</SelectItem>
-                <SelectItem value="home">Home & Garden</SelectItem>
-                <SelectItem value="sports">Sports</SelectItem>
-                <SelectItem value="toys">Toys</SelectItem>
+                <SelectItem value="Food & Beverages">Food & Beverages</SelectItem>
+                <SelectItem value="Clothing & Sports">Clothing & Sports</SelectItem>
+                <SelectItem value="Arts & Crafts">Arts & Crafts</SelectItem>
+                <SelectItem value="Garden & Plants">Garden & Plants</SelectItem>
+                <SelectItem value="Home & Living">Home & Living</SelectItem>
+                <SelectItem value="Electronics">Electronics</SelectItem>
               </SelectContent>
             </Select>
           </div>

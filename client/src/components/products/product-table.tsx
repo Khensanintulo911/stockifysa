@@ -58,7 +58,7 @@ export default function ProductTable({ products }: ProductTableProps) {
     return matchesSearch && matchesCategory;
   });
 
-  const categories = [...new Set(products.map(p => p.category))];
+  const categories = Array.from(new Set(products.map(p => p.category)));
 
   return (
     <Card>
@@ -118,7 +118,7 @@ export default function ProductTable({ products }: ProductTableProps) {
                     <td className="py-4 text-sm text-gray-600">{product.sku}</td>
                     <td className="py-4 text-sm text-gray-600 capitalize">{product.category}</td>
                     <td className="py-4 text-sm text-gray-600">{product.stock}</td>
-                    <td className="py-4 text-sm font-medium text-gray-900">${product.price}</td>
+                    <td className="py-4 text-sm font-medium text-gray-900">R{product.price}</td>
                     <td className="py-4">
                       <Badge variant={status.variant}>{status.label}</Badge>
                     </td>
