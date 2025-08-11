@@ -4,7 +4,7 @@
 
 This is a modern web-based inventory management system specifically designed for South African businesses to track products, manage stock levels, process sales, and generate reports. The application features South African Rand (ZAR) currency throughout and includes sample data with authentic South African products like biltong, rooibos tea, Springbok jerseys, and other local items.
 
-The system provides a comprehensive dashboard with real-time metrics, low stock alerts, and intuitive interfaces for product and sales management. It's built as a full-stack TypeScript application with a React frontend and Express backend, featuring a clean, responsive UI built with shadcn/ui components and Tailwind CSS.
+The system provides a comprehensive dashboard with real-time metrics, low stock alerts, and intuitive interfaces for product and sales management. Built with Django (Python), HTML, Bootstrap CSS, and JavaScript with SQLite database - following the user's technology stack preferences.
 
 ## User Preferences
 
@@ -16,24 +16,23 @@ Application branding: "StockTracker SA" for South African market focus
 ## System Architecture
 
 ### Frontend Architecture
-- **Framework**: React 18 with TypeScript for type safety and modern development patterns
-- **Routing**: Wouter for lightweight client-side routing
-- **State Management**: TanStack Query (React Query) for server state management and caching
-- **UI Framework**: shadcn/ui components built on Radix UI primitives with Tailwind CSS for styling
-- **Build Tool**: Vite for fast development and optimized production builds
-- **Form Handling**: React Hook Form with Zod validation for type-safe form management
+- **Framework**: Django Templates with Bootstrap 5 for responsive design
+- **Styling**: Bootstrap CSS framework with custom South African-themed styling
+- **Icons**: Bootstrap Icons for consistent visual elements
+- **JavaScript**: Vanilla JavaScript for interactive components and AJAX functionality
 
 ### Backend Architecture
-- **Runtime**: Node.js with Express.js for RESTful API endpoints
-- **Language**: TypeScript for full-stack type safety
-- **Database ORM**: Drizzle ORM for type-safe database operations
-- **Validation**: Zod schemas shared between frontend and backend
-- **Storage**: In-memory storage implementation with interface for easy database integration
+- **Framework**: Django 5.2.5 (Python web framework)
+- **Database**: SQLite for development (easily upgradeable to PostgreSQL)
+- **Models**: Django ORM with Product, Sale, and StockMovement models
+- **Admin Interface**: Django Admin for easy data management
+- **Validation**: Django form validation and model constraints
 
 ### Database Design
-- **Schema**: PostgreSQL-compatible schema defined with Drizzle ORM
-- **Tables**: Users, Products, Sales, and Stock Movements with proper relationships
-- **Features**: UUID primary keys, timestamp tracking, and referential integrity
+- **Database**: SQLite with Django ORM models
+- **Tables**: Products, Sales, and Stock Movements with proper foreign key relationships
+- **Features**: UUID primary keys, automatic timestamps, and referential integrity
+- **Sample Data**: Authentic South African products with realistic pricing in Rand
 
 ### Key Features
 - **Dashboard**: Real-time metrics, low stock alerts, quick actions, and sales overview with ZAR currency

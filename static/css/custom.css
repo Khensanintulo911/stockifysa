@@ -1,0 +1,142 @@
+/* StockTracker SA Custom Styles */
+
+:root {
+    --sa-green: #007b3e;
+    --sa-gold: #ffb612;
+    --sa-blue: #002395;
+    --sa-red: #de3831;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    letter-spacing: -0.025em;
+}
+
+.bg-primary {
+    background-color: var(--sa-green) !important;
+}
+
+.btn-primary {
+    background-color: var(--sa-green);
+    border-color: var(--sa-green);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #006030;
+    border-color: #006030;
+}
+
+.text-primary {
+    color: var(--sa-green) !important;
+}
+
+.border-primary {
+    border-color: var(--sa-green) !important;
+}
+
+.card {
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.list-group-item {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.badge.bg-warning {
+    background-color: var(--sa-gold) !important;
+    color: #000;
+}
+
+.badge.bg-danger {
+    background-color: var(--sa-red) !important;
+}
+
+.text-warning {
+    color: var(--sa-gold) !important;
+}
+
+.text-danger {
+    color: var(--sa-red) !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* South African Flag Colors for Status */
+.status-in-stock {
+    color: var(--sa-green) !important;
+}
+
+.status-low-stock {
+    color: var(--sa-gold) !important;
+}
+
+.status-out-of-stock {
+    color: var(--sa-red) !important;
+}
+
+/* Custom table styles */
+.table th {
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #6c757d;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .fs-4 {
+        font-size: 1.25rem !important;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .btn,
+    footer,
+    .no-print {
+        display: none !important;
+    }
+    
+    .card {
+        border: 1px solid #dee2e6 !important;
+        box-shadow: none !important;
+    }
+}
