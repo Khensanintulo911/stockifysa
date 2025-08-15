@@ -4,3 +4,28 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+# Virtual environment
+env/
+venv/
+.env/
+*.pyc
+__pycache__/
+*.sqlite3
+*.pyo
+*.pyd
+.DS_Store
+
+# Django secret key
+secrets.py
+.env
+.env.local
+.env*.local
+
+# Database files
+*.sqlite3
+*.db
+db.sqlite3
+
+# IDE files
+.idea/
+.vscode/
